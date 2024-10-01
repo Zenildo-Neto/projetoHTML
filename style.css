@@ -1,0 +1,102 @@
+/* Header */
+header .logo h1 {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+/* Seção Hero */
+.hero {
+    background: url('Aeroporto.jpg') no-repeat center center/cover;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-align: left;
+    text-shadow: 
+        -1px -1px 0 #000,
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000,
+        -2px -2px 0 #666,
+        2px -2px 0 #666, 
+        -2px 2px 0 #666, 
+        2px 2px 0 #666;
+}
+
+.hero p {
+    font-size: 20px;
+    text-shadow: 
+        -1px -1px 0 #000, 
+        1px -1px 0 #000, 
+        -1px 1px 0 #000, 
+        1px 1px 0 #000,
+        -2px -2px 0 #666,
+        2px -2px 0 #666, 
+        -2px 2px 0 #666, 
+        2px 2px 0 #666;
+}
+
+/* Correção de imagens para a seção Sobre Nós */
+.aeroporto-img {
+    width: 140%;  
+    height: auto; 
+    display: block;
+    margin: 20px auto;
+}
+
+/* Botões e Estilos da Seção Serviços */
+.servico-btn {
+    width: 100%;
+    height: 350px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.servico-btn:hover {
+    transform: scale(1.1); 
+}
+
+.servico-imagem {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.servico-nome {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 51, 102, 0.8); 
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 24px;
+}
+
+/* Ajustes de responsividade para serviços */
+@media (max-width: 768px) {
+    .servicos-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .servico-btn {
+        width: 100%;
+    }
+}
